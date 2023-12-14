@@ -1,0 +1,360 @@
+/*^ General Styles */
+
+html{
+    scroll-padding-top: 70px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: inherit;
+}
+.w-fit{
+    width: fit-content;
+}
+.btn-black{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1c1c1c;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #1c1c1c;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #1c1c1c;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+}
+.extra-bold{
+    font-weight: 800;
+}
+.extra-extra-bold{
+    font-weight: 900;
+}
+.title h3::after{
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    z-index: -1;
+}
+.very-small{
+    font-size: 12px;
+}   
+
+/*? Navbar */
+.navbar{
+    --bs-navbar-padding-y: 0px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+.navbar .collapse .nav-link{
+    font-size: 14px;
+}
+.navbar .collapse .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #1c1c1c;
+    transition: width 600ms;
+}
+.navbar .collapse .active.nav-link::after{
+    width: 100%;
+}
+
+/*!Home Section */
+
+header{
+    background-image: linear-gradient(#000a,#000a), url(../images/bg.jpg);
+    background-position: top;
+    background-size: cover;
+}
+header .container{
+    margin-top: 70px;
+}
+#home h5::after{
+    content:' |';
+    animation: 8s typing infinite ;
+}
+@keyframes typing {
+    0%{ content:' D|'}
+    1%{content:' De|'}
+    2%{content:' Dev|'}
+    3%{content:' Deve|'}
+    4%{content:' Devel|'}
+    5%{content:' Develo|'}
+    6%{content:' Develope|'}
+    7%{content:' Developer|'}
+    21%{content:' Develope|'}
+    22%{content:' Develop|'}
+    23%{content:' Develo|'}
+    24%{content:' Devel|'}
+    25%{content:' Deve|'}
+    26%{content:' Dev|'}
+    27%{content:' De|'}
+    28%{content:' D|'}
+    29%{content:' |'}
+    30%{content:' D|'}
+    31%{content:' De|'}
+    32%{content:' Des|'}
+    34%{content:' Desi|'}
+    35%{content:' Desig|'}
+    36%{content:' Design|'}
+    37%{content:' Designe|'}
+    38%{content:' Designer|'}
+    50%{content:' Designe|'}
+    51%{content:' Design|'}
+    52%{content:' Desig|'}
+    53%{content:' Desi|'}
+    54%{content:' Des|'}
+    55%{content:' De|'}
+    56%{content:' D|'}
+    57%{content:' |'}
+    58%{content:' L|'}
+    59%{content:' La|'}
+    60%{content:' Lar|'}
+    61%{content:' Lary|'}
+    62%{content:' Lary |'}
+    63%{content:' Lary D|'}
+    64%{content:' Lary Da|'}
+    65%{content:' Lary Dan|'}
+    66%{content:' Lary Dani|'}
+    67%{content:' Lary Danie|'}
+    68%{content:' Lary Daniel|'}
+    69%{content:' Lary Daniels|'}
+    88%{content:' Lary Daniel|'}
+    89%{content:' Lary Danie|'}
+    90%{content:' Lary Dani|'}
+    91%{content:' Lary Dan|'}
+    92%{content:' Lary Da|'}
+    93%{content:' Lary D|'}
+    94%{content:' Lary |'}
+    95%{content:' Lary|'}
+    96%{content:' Lar|'}
+    97%{content:' La|'}
+    98%{content:' L|'}
+    99%{content:' |'}
+    }
+header .icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+
+/*^ About Section */
+#about .progress{
+    height: 25px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow:  0px 2px 7px rgba(0, 0, 0, 0.3) inset;
+}
+#about .progress-bar{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+#about .about-img::after{
+    content: '';
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom:-40px;
+    z-index: -1;
+}
+#about .btn{
+    --bs-btn-padding-x:30px;
+    --bs-btn-padding-y:10px ;
+    --bs-btn-font-size: 14px;
+}
+.btn-contact{
+    --bs-btn-color: #1c1c1c;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1c1c1c;
+    --bs-btn-hover-border-color: #1c1c1c;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+}
+
+/*& Services Section */
+
+#services .service-icon{
+    width: 65px;
+    height: 65px;
+    background-color: #f4f4f4;
+    color:#343434 ;
+    transition: background-color 500ms ;
+}
+#services .inner:hover .service-icon{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+
+/** Portfolio Section */
+.nav-link{
+    padding: 0px;
+    color: #222222;
+}
+.nav-pills .nav-link.active{
+    color: #222222;
+    background-color: transparent;
+}
+.nav-pills .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1c1c1c;
+    left: 0;
+    bottom: -4px;
+    transition: width 400ms;
+}
+.nav-pills .nav-link.active::after{
+    width: 100%;
+}
+#portfolio .port-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #111;
+    color:#fff ;
+    border: none;
+}
+#portfolio .port-icon:hover{
+    border: 2px solid #111;
+    color: #111;
+    background-color: #fff;
+    cursor: pointer;
+}
+#portfolio .inner::after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 15px;
+    bottom: -15px;
+    opacity: 0;
+    transition: all 600ms;
+}
+#portfolio .inner:hover::after,#portfolio .inner:hover .layer{
+    opacity: 1;
+    top: 4px;
+    bottom: 4px;
+}
+#portfolio .layer {
+    opacity: 0;
+    transition: opacity 600ms;
+}
+#portfolio .layer h4{
+    padding-bottom: 20px;
+    transition: padding-bottom 600ms;
+}
+#portfolio .inner:hover h4{
+    padding-bottom: 0px;
+}
+
+/*~ Client Section */
+
+.max-500{
+    max-width: 950px;
+}
+#testimonial .client img{
+    width: 90px;
+    height: 90px;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #d6d6d6;
+}
+
+/*? Counter Section  */
+
+.text-color{
+    color: #343434;
+}
+
+/*! Team Section */
+
+#team .inner{
+    background-color: rgba(52, 52, 52,.8);
+}
+#team .team-social-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    color:#fff ;
+    border: none;
+}
+#team .team-social-icon:hover{
+    border: 2px solid #111;
+    color: #111;
+    background-color: #fff;
+    cursor: pointer;
+}
+#team .team-social-icons{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    scale: .5;
+    bottom: 4px;
+    opacity: 0;
+    transition: all 500ms;
+}
+#team .team-img img{
+    transition: scale 500ms ease ;
+}
+#team .inner:hover .team-img img{
+    scale: 1.2 ;
+}
+#team .inner:hover .team-social-icons{
+    opacity: 1;
+    scale: 1;
+    transform: rotateY(360deg);
+}
+
+
+/*^ Contact Section */
+
+#contact .contact-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+    color:#343434 ;
+    transition: background-color 500ms ;
+}
+#contact .contact-item:hover .contact-icon{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+#contact input,#contact textarea{   
+    background-color: #f4f4f4;
+}
+#contact input:focus,#contact textarea:focus{
+    outline: none;
+}
+footer{
+    background-color:#1c1c1c;
+}

@@ -1,0 +1,14 @@
+@media (min-width:1400px) {
+    .w-xxl-75{
+        width: 75%;
+    }
+    .w-xxl-60{
+        width: 65%;
+    }
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+}
